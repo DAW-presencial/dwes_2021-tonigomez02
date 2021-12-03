@@ -27,7 +27,7 @@ if (isset($_POST["enviar"])) {
         if (!empty($_FILES)) {
             foreach ($_FILES as $file) {
                 if ($file['error'] == 0) {
-                    if (move_uploaded_file($file['tmp_name'], 'archivos/' . $file['name'])) {
+                    if (move_uploaded_file($file['tmp_name'], __DIR__ . '/archivos/' . $file['name'])) {
                         $salida .= "Tamaño de " . $file['name'] . " = " . $file['size'] . " bytes <br>";
                     }
                 } else {
