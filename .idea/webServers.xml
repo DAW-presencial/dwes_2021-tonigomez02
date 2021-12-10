@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="70bcf643-7116-4159-9fd3-246e10299776" name="Examen" url="http://localhost/dwes_2021-tonigomez02">
+        <fileTransfer mountedRoot="C:\xampp\htdocs\dwes_2021-tonigomez02" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
