@@ -34,6 +34,27 @@
             padding: 20px;
         }
 
+        label{
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            width: 70px;
+            display: block;
+        }
+
+        input{
+            padding: 8px;
+            margin: 5px;
+        }
+
+        input:last-child{
+            margin: 0;
+        }
+
+        div{
+            display: flex;
+            align-items: center;
+        }
+
     </style>
 </head>
 <body>
@@ -96,9 +117,15 @@ function imprimirFormulario()
 
     ?>
     <form action="" method="post">
-        <label for="nombre" >Nombre: </label><input name="nombre" type="text" placeholder="nombre..."><br>
-        <label for="apellido" >Apellido: </label><input name="apellido" type="text" placeholder="apellido..."><br>
-        <label for="telefono" >Telefono: </label><input name="telefono" type="text" placeholder="telefono...""><br>
+        <div>
+            <label for="nombre" >Nombre: </label><input name="nombre" type="text" placeholder="nombre..."><br>
+        </div>
+        <div>
+            <label for="apellido" >Apellido: </label><input name="apellido" type="text" placeholder="apellido..."><br>
+        </div>
+        <div>
+            <label for="telefono" >Telefono: </label><input name="telefono" type="text" placeholder="telefono...""><br>
+        </div>
         <input name="enviar" type="submit" value="Submit">
     </form>
     <?php
