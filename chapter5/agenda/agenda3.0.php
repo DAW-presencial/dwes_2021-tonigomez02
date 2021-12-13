@@ -68,6 +68,7 @@ spl_autoload_register(function ($clase) {
 $database = new Database();
 $db = $database->getConnection();
 $utils = new DBUtils();
+$errores = [];
 
 if (isset($_POST["enviar"])) {
 
@@ -98,7 +99,7 @@ if (isset($_POST["enviar"])) {
             imprimirFormulario();
             echo '<p style="text-align: center">Contacto eliminado</p>' . "<br>";
             $utils->read($db);
-        } else {
+        }else{
             array_push($errores, 'Introduce un telefono');
         }
     } else if (empty($telefono)) {
